@@ -518,20 +518,20 @@ gitment:
   lazy: false # Comments lazy loading with a button
   cleanly: false # Hide 'Powered by ...' on footer, and more
   language: # Force language, or auto switch by theme
-  github_user: ZiQiangWang # MUST HAVE, Your Github Username
-  github_repo: ZiQiangWang.github.io # MUST HAVE, The name of the repo you use to store Gitment comments
-  client_id: 523201bcdbcafab7fbd5 # MUST HAVE, Github client id for the Gitment
-  client_secret: 4ed492bf0b9f7b41186f1910c5c4db2c34431881 # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  github_user: # MUST HAVE, Your Github Username
+  github_repo: # MUST HAVE, The name of the repo you use to store Gitment comments
+  client_id: # MUST HAVE, Github client id for the Gitment
+  client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
 gitalk:
   enable: true
-  githubID: ZiQiangWang  # 例：asdfv1929
-  repo: ZiQiangWang.github.io   # 例：asdfv1929.github.io
+  githubID: ZiQiangWang
+  repo: ZiQiangWang.github.io
   ClientID: 523201bcdbcafab7fbd5
   ClientSecret: 4ed492bf0b9f7b41186f1910c5c4db2c34431881
-  adminUser: ZiQiangWang #指定可初始化评论账户
+  adminUser: ZiQiangWang
   distractionFreeMode: true
 
 # Baidu Share
