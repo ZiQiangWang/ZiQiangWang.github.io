@@ -14,11 +14,11 @@ tags:
 >
 >答：颜值即正义
 
-&emsp;&emsp;现有的解决方案有很多，各有优劣，很多文章也只是简单罗列了各种实现方式，告诉你说在合适的场景使用合适的方法，或者说结合使用。但是具体怎么做，并没有给出详细的方案。本文结合文章[《再谈Retina下1px的解决方案》](https://www.w3cplus.com/css/fix-1px-for-retina.html)中的讨论，给出了兼容ios和安卓的方法。
+&emsp;&emsp;现有的解决方案有很多，各有优劣，很多文章也只是简单罗列了各种实现方式，告诉你说在合适的场景使用合适的方法，或者说结合使用。本文参考文章[《再谈Retina下1px的解决方案》](https://www.w3cplus.com/css/fix-1px-for-retina.html)中的讨论，给出了目前最合适的兼容ios和安卓的方法。
 
 <!--more-->
 
-由于ios版本的推进，支持到ios8已经是可以接受的事了，因此，可以充分利用ios8及以上支持0.5px的特性。
+由于ios版本的推进，支持到ios8已经是可以接受的事了，可以充分利用ios8及以上支持0.5px的特性。
 
 # 判断0.5px支持
 
@@ -51,7 +51,7 @@ if (window.devicePixelRatio && devicePixelRatio >= 2) {
 }
 ```
 
-为了确保准确性，使用方案1。
+为了确保准确性，所有的ios版本大于8.0的设备，使用0.5px方案，所有安卓机使用border-image方案。当然，ios8以下的设备也可以兼容。
 
 # postcss-write-svg 
 
