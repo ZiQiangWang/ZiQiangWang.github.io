@@ -60,9 +60,7 @@ tags:
 
 
 
-再者，postcss-px2rem在进行转换时，会将三方库中的px单位进行转换，在使用第三方的组件库时，会导致尺寸异常。因此，开发了[postcss-px2rem-more](https://www.npmjs.com/package/postcss-px2rem-more)，添加exclude配置项，用来排除不进行转换的三方库。
-
-
+再者，postcss-px2rem在进行转换时，会将三方库中的px单位进行转换，在使用第三方的组件库时，会导致尺寸异常。因此，在插件[postcss-px2rem-exclude](https://www.npmjs.com/package/postcss-px2rem-exclude)基础上，将内置px2rem替换为px2rem-more，开发了[postcss-px2rem-more](https://www.npmjs.com/package/postcss-px2rem-more)，添加exclude配置项，用来排除不进行转换的三方库。
 
 # 结论
 
